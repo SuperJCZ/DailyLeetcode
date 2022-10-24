@@ -8,10 +8,10 @@ class Solution:
         l,r,mid = 0,len(nums)-1,0
 
         while l <= r:
-            # TODO 1.取mid
+            # 1.取mid
             mid = (l+r) // 2  # 偶数组的len是奇//2：在中间左边  # 奇数组的len是偶//2：在中间
 
-            # TODO 2.判断nums[mid]在target哪边，更新l,r
+            # 2.判断nums[mid]在target哪边，更新l,r
             if nums[mid] == target:
                 return mid
             elif nums[mid] < target:
